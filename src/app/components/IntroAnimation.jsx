@@ -9,27 +9,27 @@ const IntroAnimation = ({ onEnd }) => {
 	const [moveOut, setMoveOut] = useState(false);
 
 	useEffect(() => {
-		const timer1 = setTimeout(() => {
+		const changeColour = setTimeout(() => {
 			setShowFirstDiv(false); // Switch divs
 		}, 1000);
 
-		const timer2 = setTimeout(() => {
+		const shrinkText = setTimeout(() => {
 			setShrinkText(true); // Shrink the text
 		}, 1500);
 
-		const timer3 = setTimeout(() => {
+		const moveOffScreen = setTimeout(() => {
 			setMoveOut(true); // Move the text off screen
 		}, 2500);
 
-		const timer4 = setTimeout(() => {
+		const removeFromDOM = setTimeout(() => {
 			onEnd(); // Remove the intro animation from the DOM
 		}, 3500);
 
 		return () => {
-			clearTimeout(timer1);
-			clearTimeout(timer2);
-			clearTimeout(timer3);
-			clearTimeout(timer4);
+			clearTimeout(changeColour);
+			clearTimeout(shrinkText);
+			clearTimeout(moveOffScreen);
+			clearTimeout(removeFromDOM);
 		};
 	}, [onEnd]);
 

@@ -3,7 +3,9 @@ import React from "react";
 const TopLogo = () => {
 	return (
 		<div className="max-w-fit flex items-end space-x-1">
-			<h1 className="text-2xl md:text-3xl text-white font-semibold">H</h1>
+			<h1 className="text-2xl md:text-3xl text-white font-semibold">
+				Harman
+			</h1>
 			<div className="w-1 mb-[7.5px] aspect-square bg-white"></div>
 		</div>
 	);
@@ -23,11 +25,11 @@ const CTA = ({ content, url, children }) => {
 const MainContent = () => {
 	return (
 		<div className="min-h-[80vh] flex flex-col justify-center space-y-8">
-			<div className="max-w-fit flex items-end space-x-2">
-				<h1 className="text-6xl md:text-[14rem] font-semibold">
-					Harman
+			<div className="w-full flex items-end space-x-2">
+				<h1 className="leading-none text-[4rem] sm:text-[8rem] md:text-[10rem] lg:text-[14rem] font-semibold">
+					Harman <br></br> Singh
 				</h1>
-				<div className="w-6 mb-[30px] aspect-square bg-white"></div>
+				{/* <div className="w-2 mb-[24px] sm:w-4 sm:mb-[14px] md:w-6 md:mb-[18px] lg:mb-[22px] xl:mb-[26px] 2xl:mb-[30px] aspect-square bg-white"></div> */}
 			</div>
 		</div>
 	);
