@@ -1,8 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { Typewriter } from "react-simple-typewriter";
 
-const IntroAnimation = () => {
+const IntroAnimation = ({ onEnd }) => {
 	const [showFirstDiv, setShowFirstDiv] = useState(true);
 	const [shrinkText, setShrinkText] = useState(false);
 	const [moveOut, setMoveOut] = useState(false);
@@ -10,22 +11,27 @@ const IntroAnimation = () => {
 	useEffect(() => {
 		const timer1 = setTimeout(() => {
 			setShowFirstDiv(false); // Switch divs
-		}, 500); // 0.5 seconds delay to switch divs
+		}, 1000);
 
 		const timer2 = setTimeout(() => {
 			setShrinkText(true); // Shrink the text
-		}, 1000); // After switching, shrink the text after an additional 0.5 seconds
+		}, 1500);
 
 		const timer3 = setTimeout(() => {
 			setMoveOut(true); // Move the text off screen
-		}, 2000); // After shrinking, move the text off screen after an additional 1 second
+		}, 2500);
+
+		const timer4 = setTimeout(() => {
+			onEnd(); // Remove the intro animation from the DOM
+		}, 3500);
 
 		return () => {
 			clearTimeout(timer1);
 			clearTimeout(timer2);
 			clearTimeout(timer3);
+			clearTimeout(timer4);
 		};
-	}, []);
+	}, [onEnd]);
 
 	return (
 		<div>
@@ -33,7 +39,15 @@ const IntroAnimation = () => {
 				<div className="bg-white min-h-screen flex justify-center items-center">
 					<div className="flex items-end absolute space-x-2">
 						<h1 className="text-9xl text-black font-semibold">
-							Harman
+							<Typewriter
+								words={["Harman"]}
+								loop={false}
+								cursor={false}
+								cursorStyle="_"
+								typeSpeed={100}
+								deleteSpeed={100}
+								delaySpeed={1000}
+							/>
 						</h1>
 						<div className="w-3 mb-[18px] aspect-square bg-black"></div>
 					</div>
