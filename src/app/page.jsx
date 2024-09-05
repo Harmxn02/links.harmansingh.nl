@@ -7,16 +7,19 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
 	const [showIntro, setShowIntro] = useState(true);
+	const [showHero, setShowHero] = useState(false);
 
 	// Callback to remove the intro animation from the DOM
 	const handleIntroEnd = () => {
 		setShowIntro(false);
+		setShowHero(true);
 	};
 
 	return (
 		<div className="bg-black text-white">
 			{showIntro && <IntroAnimation onEnd={handleIntroEnd} />}
-			<Hero />
+			{showHero && <Hero />}
+			{/* <Hero /> */}
 		</div>
 	);
 }
