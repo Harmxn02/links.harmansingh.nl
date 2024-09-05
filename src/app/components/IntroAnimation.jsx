@@ -37,7 +37,7 @@ const IntroAnimation = ({ onEnd }) => {
 		<div>
 			{showFirstDiv ? (
 				<div className="bg-white min-h-screen flex justify-center items-center">
-					<div className="flex items-end absolute space-x-2">
+					<div className="flex items-end absolute space-x-1 md:space-x-2">
 						<h1 className="text-5xl md:text-9xl text-black font-semibold">
 							<Typewriter
 								words={["Harman"]}
@@ -48,8 +48,9 @@ const IntroAnimation = ({ onEnd }) => {
 								deleteSpeed={100}
 								delaySpeed={1000}
 							/>
+							{/* Harman */}
 						</h1>
-						<div className="w-3 mb-[18px] aspect-square bg-black"></div>
+						<div className="w-[0.4rem] mb-[7px] md:w-3 md:mb-[18px] aspect-square bg-black"></div>
 					</div>
 				</div>
 			) : (
@@ -59,14 +60,14 @@ const IntroAnimation = ({ onEnd }) => {
 					}`}
 				>
 					<div
-						className={`flex items-end absolute space-x-2 transition-all duration-1000 ${
+						className={`flex items-end absolute space-x-1 md:space-x-2 transition-all duration-1000 ${
 							shrinkText ? "transform scale-50" : ""
 						}`}
 					>
 						<h1 className="text-5xl md:text-9xl text-white font-semibold">
 							Harman
 						</h1>
-						<div className="w-3 mb-[18px] aspect-square bg-white"></div>
+						<div className="w-[0.4rem] mb-[7px] md:w-3 md:mb-[18px] aspect-square bg-white"></div>
 					</div>
 				</div>
 			)}
