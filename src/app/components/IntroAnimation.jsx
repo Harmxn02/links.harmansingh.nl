@@ -38,7 +38,7 @@ const IntroAnimation = ({ onEnd }) => {
 			{showFirstDiv ? (
 				<div className="bg-white min-h-screen flex justify-center items-center">
 					<div className="flex items-end absolute space-x-2">
-						<h1 className="text-9xl text-black font-semibold">
+						<h1 className="text-5xl md:text-9xl text-black font-semibold">
 							<Typewriter
 								words={["Harman"]}
 								loop={false}
@@ -63,7 +63,7 @@ const IntroAnimation = ({ onEnd }) => {
 							shrinkText ? "transform scale-50" : ""
 						}`}
 					>
-						<h1 className="text-9xl text-white font-semibold">
+						<h1 className="text-5xl md:text-9xl text-white font-semibold">
 							Harman
 						</h1>
 						<div className="w-3 mb-[18px] aspect-square bg-white"></div>
