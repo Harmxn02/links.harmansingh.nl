@@ -3,7 +3,7 @@
 import Hero from "./components/Hero";
 import IntroAnimation from "./components/IntroAnimation";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function Home() {
 	const [showIntro, setShowIntro] = useState(true);
@@ -19,7 +19,6 @@ export default function Home() {
 		<div className="bg-black text-white">
 			{showIntro && <IntroAnimation onEnd={handleIntroEnd} />}
 			{showHero && <Hero />}
-			{/* <Hero /> */}
 		</div>
 	);
 }
