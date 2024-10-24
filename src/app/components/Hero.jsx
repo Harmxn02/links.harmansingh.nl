@@ -37,7 +37,7 @@ const MainContent = () => {
 	return (
 		<div className="min-h-[80vh] flex flex-col justify-center space-y-8">
 			<div className="w-full flex items-end space-x-2">
-				<h1 className="leading-none tracking-[-0.25rem] sm:tracking-[-0.5rem] md:tracking-[-0.75rem] lg:tracking-[-1rem]  text-[4rem] sm:text-[8rem] md:text-[10rem] lg:text-[14rem] font-semibold">
+				<h1 className="leading-none tracking-[-0.25rem] sm:tracking-[-0.5rem] md:tracking-[-0.75rem] lg:tracking-[-1rem]  text-[5rem] sm:text-[8rem] md:text-[10rem] lg:text-[14rem] font-semibold">
 					Harman <br></br> Singh
 				</h1>
 				{/* <div className="w-2 mb-[24px] sm:w-4 sm:mb-[14px] md:w-6 md:mb-[18px] lg:mb-[22px] xl:mb-[26px] 2xl:mb-[30px] aspect-square bg-white"></div> */}
