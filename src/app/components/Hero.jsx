@@ -4,9 +4,8 @@ const TopLogo = () => {
 	return (
 		<div className="max-w-fit flex items-end space-x-1">
 			<h1 className="text-2xl md:text-3xl text-white font-semibold">
-				Harman
+				Harman.
 			</h1>
-			<div className="w-1 mb-[8px] md:mb-[7.5px] aspect-square bg-white"></div>
 		</div>
 	);
 };
