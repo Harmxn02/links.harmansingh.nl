@@ -16,7 +16,7 @@ export default function Home() {
 	};
 
 	return (
-		<div className="bg-black text-white font-[family-name:var(--font-geist-sans)]">
+		<div className="bg-black font-[family-name:var(--font-geist-sans)] text-white">
 			{showIntro && <IntroAnimation onEnd={handleIntroEnd} />}
 			{showHero && <Hero />}
 		</div>

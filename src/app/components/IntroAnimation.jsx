@@ -29,10 +29,22 @@ const IntroAnimation = ({ onEnd }) => {
 
 	return (
 		<div>
-			<div className={`bg-black min-h-screen flex justify-center items-center transition-all duration-1000 ${moveOut ? "-translate-y-full" : "items-center"}`}>
-				<div className={`flex items-end absolute space-x-1 md:space-x-2 transition-all duration-1000 ${shrinkText ? "transform scale-50" : ""}`}>
-					<h1 className="tracking-tighter md:tracking-tight text-5xl md:text-9xl text-white font-semibold">
-						<Typewriter words={["Harman."]} loop={false} cursor={false} cursorStyle="_" typeSpeed={100} deleteSpeed={100} delaySpeed={1000} />
+			<div
+				className={`flex min-h-screen items-center justify-center bg-black transition-all duration-1000 ${moveOut ? "-translate-y-full" : "items-center"}`}
+			>
+				<div
+					className={`absolute flex items-end space-x-1 transition-all duration-1000 md:space-x-2 ${shrinkText ? "scale-50 transform" : ""}`}
+				>
+					<h1 className="text-5xl font-semibold tracking-tighter text-white md:text-9xl md:tracking-tight">
+						<Typewriter
+							words={["Harman."]}
+							loop={false}
+							cursor={false}
+							cursorStyle="_"
+							typeSpeed={100}
+							deleteSpeed={100}
+							delaySpeed={1000}
+						/>
 					</h1>
 				</div>
 			</div>

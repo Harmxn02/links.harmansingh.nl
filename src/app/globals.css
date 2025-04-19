@@ -7,8 +7,8 @@
 @layer utilities {
 	.border-dashed {
 		border-width: 1px;
-        border-style: dashed;
-        border-color: #878787;
-        padding: 0.5rem 1rem;
+		border-style: dashed;
+		border-color: #878787;
+		padding: 0.5rem 1rem;
 	}
 }
