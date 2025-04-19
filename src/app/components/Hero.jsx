@@ -12,7 +12,7 @@ const TopLogo = () => {
 
 const CTA = ({ content, url, children }) => {
 	return (
-		<button className="flex items-center gap-2 rounded-full bg-white px-5 py-3 font-medium text-black transition-colors duration-500 hover:bg-[#cccccc]">
+		<button className="bg-buttonSecondary hover:bg-buttonSecondaryHover flex items-center gap-2 rounded-full px-5 py-3 font-medium text-black transition-colors duration-500">
 			<a href={url} target="_blank" className="text-sm md:text-base">
 				{content}
 			</a>
@@ -23,7 +23,7 @@ const CTA = ({ content, url, children }) => {
 
 const Link = ({ content, url, children }) => {
 	return (
-		<button className="flex items-center gap-2 rounded-md bg-[#101010] px-5 py-3 font-medium text-white transition-colors duration-500 hover:bg-[#202020]">
+		<button className="bg-buttonPrimary hover:bg-buttonPrimaryHover flex items-center gap-2 rounded-md px-5 py-3 font-medium text-white transition-colors duration-500">
 			<a
 				href={url}
 				target="_blank"

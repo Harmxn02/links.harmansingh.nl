@@ -3,6 +3,12 @@
 @theme {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
+
+	/* Custom colours */
+	--color-buttonPrimary: #101010;
+	--color-buttonPrimaryHover: #202020;
+	--color-buttonSecondary: white;
+	--color-buttonSecondaryHover: #cecece;
 }
 
 /*
