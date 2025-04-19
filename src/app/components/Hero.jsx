@@ -41,12 +41,12 @@ const MainContent = () => {
 	return (
 		<div className="flex min-h-[80vh] flex-col justify-center space-y-8">
 			<div className="flex w-full items-end space-x-2">
-				<h1 className="text-[5rem] font-semibold leading-none tracking-[-0.25rem] sm:text-[8rem] sm:tracking-[-0.5rem] md:text-[10rem] md:tracking-[-0.75rem] lg:text-[14rem] lg:tracking-[-1rem]">
+				<h1 className="text-[5rem] leading-none font-semibold tracking-[-0.25rem] sm:text-[8rem] sm:tracking-[-0.5rem] md:text-[10rem] md:tracking-[-0.75rem] lg:text-[14rem] lg:tracking-[-1rem]">
 					Harman <br></br> Singh
 				</h1>
 				{/* <div className="w-2 mb-[24px] sm:w-4 sm:mb-[14px] md:w-6 md:mb-[18px] lg:mb-[22px] xl:mb-[26px] 2xl:mb-[30px] aspect-square bg-white"></div> */}
 			</div>
-			<div className="flex items-baseline space-x-2 space-y-2">
+			<div className="flex items-baseline space-y-2 space-x-2">
 				<Link
 					content="LinkedIn"
 					url="https://www.linkedin.com/in/harmanpnahal/"
@@ -66,7 +66,7 @@ const MainContent = () => {
 
 const Hero = () => {
 	return (
-		<div className="mx-auto min-h-screen max-w-screen-2xl bg-black pl-8 pr-8 pt-8 text-white 2xl:pl-1 2xl:pr-1">
+		<div className="mx-auto min-h-screen max-w-(--breakpoint-2xl) bg-black pt-8 pr-8 pl-8 text-white 2xl:pr-1 2xl:pl-1">
 			<div className="flex items-center justify-between">
 				<TopLogo />
 				<CTA content="Contact" url="mailto:harman.pnahal@gmail.com">
